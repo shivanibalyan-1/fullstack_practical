@@ -26,8 +26,14 @@ body{
 }
 .menu ul li a{
     text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial;
 }
-.menu ul li:hover .active{
+.fa{
+    margin-right: 5px;
+}
+.menu ul li:hover,.active {
     background-color: goldenrod;
 }
 .dropdown1{
@@ -49,10 +55,20 @@ body{
     border-bottom: 1px solid goldenrod;
     
 }
+.menu ul li:hover .dropdown1 ul li a:hover{
+    color: goldenrod;
+}
+.dropdown2{
+    display: none;
+}
 .select:hover .dropdown2{
     display: block;
     position: absolute;
     background-color: rgb(50,50,50);
-    margin-left: 130px;
+    margin-left: 160px;
     margin-top: -50px;
+}
+.fa-plus{
+    color: white;
+    font: right;
 }

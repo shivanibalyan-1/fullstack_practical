@@ -5,40 +5,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practical-7</title>
-    <link rel="stylesheet" href="./html.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Website layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1500px;
+            /*border: 2px solid black;*/
+            margin: 0 auto;
+            height: auto;
+           
+        }
+
+        .header {
+            width: 100%;
+            height: 70px;
+            background-color: slategray;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: Arial;
+            font-size: 50px;
+            line-height: 60px;
+            color: white;
+        }
+
+        .Banner {
+            width: 100%;
+            height: 600px;
+            background-color: paleturquoise;
+
+
+            font-size: xx-large;
+            color: white;
+            line-height: 400px;
+            text-align: center;
+        }
+
+        .circle1 {
+            background-color: yellow;
+            padding: auto;
+            margin: 50px;
+        }
+
+        .content {
+            height: 460px;
+            width: 100%;
+            /*border: 2px solid red;*/
+            margin-bottom: 10px;
+            
+        }
+
+        .content::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .section1 {
+            background-color: gainsboro;
+            height: 100vh;
+            width:100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+        .circle{
+            background-color: hotpink;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .circle1:before {
+           
+            font-size: 200px;
+            content: ' \40CF' ;
+            width: 50px;
+            height: 50px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            background: blue;
+            
+        }
+
+        .left {
+            width: 20%;
+            height: 100%;
+            /* border: 2px solid blue;*/
+            float: right;
+        }
+
+        .right {
+            width: 78%;
+            height: 65vh;
+            background-color: goldenrod;
+            float: left;
+            margin: auto;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 70px;
+            background-color: skyblue;
+            text-align: center;
+            font-size: x-large;
+            color: white;
+        }
+
+        .Artical {
+            width: 100%;
+            height: 150px;
+            background-color: coral;
+            margin-bottom: 10px;
+            text-align: center;
+            color: white;
+            font-size: x-large;
+        }
+
+        
+        .Section3{
+            display: inline-flex;
+            
+        }
+        .ss{
+            color: black;
+            text-align: center;
+            font-size: x-large;
+        }
+        .box {
+            width: 300px;
+            height: 500px;
+            border: 2px solid green;
+            margin-bottom: 10px;
+            padding: 20px;
+            border-radius: 2px;
+            overflow: hidden;
+            text-align: justify;
+            margin: 30px;
+            background-color: deeppink;
+
+        }
+
+        
+    </style>
 </head>
 
 <body>
-    <div class="menu">
-        <ul >
-
-            <li class="active">
-            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="#"><i class="fas fa-book"></i>About</a></li>
-            <li><a href="#"><i class="fas fa-abacus"></i>Service</a>
-                <div class="dropdown1">
-                    <ul>
-                        <li><a href="#"></a>Requirement</li>
-                        <li><a href="#"></a>devlopment</li>
-                        <li><a href="#"></a>Training</li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#"><i class="fas fa-rss"></i>blog</a>
-                <div class="dropdown1">
-                    <ul>
-                        <li><a href="#"></a>management</li>
-                        <li><a href="#"></a>servive</li>
-                        <li><a href="#"></a>phone</li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#"><i class="fas fa-phone"></i>Contact</a></li>
-        </li>
-        </ul>
-
+    <div class="container">
+        <div class="header">header</div>
+        <div class="Banner">Banner</div>
+        <div class="ss">Section-1</div>
+        <div class="section1">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="ss">Section-2</div>
+        <div class="content"> 
+            <div class="left">
+                <div class="Artical">Artical-1</div>
+                <div class="Artical">Artical-2</div>
+                <div class="Artical">Artical-3</div>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="ss">Section-3</div>
+        <div class="Section3">
+            
+            <div class="box" ></div>
+            <div class="box" ></div> 
+            <div class="box" ></div>
+            <div class="box" ></div>
+        </div>
+        <div class="ss">Section-4</div>
+        <div class="footer">footer</div>
     </div>
 </body>
 

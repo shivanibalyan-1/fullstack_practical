@@ -30,6 +30,13 @@ body{
     
     
 }
+html
+{
+    scroll-padding-top: 70px;
+
+    scroll-behavior: smooth;
+    
+}
 
 .circle {
     
@@ -157,7 +164,10 @@ body{
 .header{
     background-color: rgb(50,50,50);
     text-align: center;
-    margin-bottom: 10px;
+    height: 70px;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    display: flex;
     position: sticky;
     top: 0;
 }

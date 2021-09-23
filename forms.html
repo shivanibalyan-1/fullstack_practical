@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:wheat;
+            text-align: center;
+        }
+        .container{
+            background-color: lightpink;
+            width: 500px;
+            border-radius: 20px;
+            height: 500px;
+            padding: 20px;
+            box-shadow: 10px 30px 10px rgb(0,0,0,.4);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="data.html" method="GET">
+        <div>
+        <label for="fname">First Name :</label>
+        <input type="text" id="Firstname" name="fname" required  placeholder="enter the firstname" />
+        <br /><br>
+    </div>
+    
+    <div>
+        <label for="lname">Last Name :
+        <input type="text" name="lname">
+    </label>
+        <br /><br>
+    </div>
+    <div>
+        <label for="pass">Password :</label>
+        <input type="password" name="password" id="pass" pattern="[A-Z][a-zA-Z0-9]*[@#$%&]*"
+        title="please enter one uppercase,one lowercase,one numeric char,one special char" required/>
+        <br/><br>
+    </div>
+    <div>
+        <label for="mail">E-mail :</label>
+        <input type="email" name="mail" required>
+        <br/><br>
+    </div>
+
+    <div>
+        <label for="gender">Gender :</label>
+            <input type="radio" name="male" id="gender" />Male
+        
+            <input type="radio" name="male" id="gender" />Female
+            <input type="radio" name="male" id="gender" />other
+        <br/><br>
+    </div>
+    <div>
+        <label for="tech">Technology:</label>
+        <input type="checkbox" name="chk1" id="Technology"/>Java
+        <input type="checkbox" name="chk2" id="Technology"/>Python
+        <input type="checkbox" name="chk3" id="Technology"/>full-stack
+        <br/><br>
+    </div>
+    <label for="age">Age :</label>
+    <input type="number" name="age" id="age" min="18" max="100" step="1"/>
+    <br/><br>
+    <label for="dob">D.O.B :</label>
+    <input type="date" name="dob" id="dob">
+    <br/><br>
+    <label for="file">upload your document :</label>
+    
+    <input type="file" name="file" id="file" accept=".pdf,.doc,.docx,.txt" >
+
+    <br/><br>
+    <label for="search">search:</label>
+    <input type="search" name="search" id="file"  >
+    <br/><br>
+    <label for="website">Website:</label>
+    <input type="url" name="search" id="file"  >
+    <br/><br>
+        <input type="submit"/>
+        <input type="button" value="Click me" onclick="alert('this is button Event')"/>
+    </form>
+</div>
+</body>
+</html>

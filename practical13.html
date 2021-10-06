@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>full stack practical class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  </head>
+  <style>
+    * {
+      top: 0%;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    table {
+      border: 2px solid white;
+      width: 900px;
+      margin-top: -30px;
+      height: 90vh;
+      border-radius: 5px;
+    }
+    table,
+    th,
+    tr,
+    td {
+      border-collapse: collapse;
+      padding: 0px 15px;
+      border-radius: 5px;
+    }
+    td {
+      font-family: Arial;
+    }
+    th {
+      padding: 20px 1 px;
+      font-size: 20 px;
+      font-family: Arial;
+    }
+    h1 {
+      background-color: white;
+      color: black;
+      width: 896 px;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0 px;
+      border: 2px solid white;
+    }
+    .base {
+      height: 20vh;
+      color: rgb(74, 15, 97);
+      font-size: 30px;
+    }
+    .rupee{
+        color:rgb(71, 99, 16);
+    }
+    .lightgreen{
+        background-color: rgb(134, 204, 134);
+    }
+    .green{
+        background-color: rgb(90, 161, 90);
+    }
+    .lightblue{
+        background-color: rgb(125, 159, 170);
+    }
+    .blue{
+        background-color: rgb(127, 197, 244);
+    }
+    .src{
+        padding: 10px;
+        align-items: center;
+        color: white;
+        font-family: Arial;
+        background-color: blueviolet;
+        border-radius: 5px;
+    }
+    .src:hover{
+        background-color: brown;
+        color:whitesmoke;
+    }
+    .tick{
+        color:darkgreen;
+        font-size: x-large;
+    }
+    .cross{
+        color: red;
+        font-size: x-large;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <table>
+        <h1>SELECT YOUR PLAN</h1>
+        <tr class ="base">
+          <th class ="lightgreen"><i class="fa fa-tachometer"></i>Basic</th>
+          <th class ="green"><i class="fa fa-snapchat"></i>Plus</th>
+          <th class = "lightblue"><i class="fa fa-telegram"></i>deluxe</th>
+          <th class = "blue"><i class="fa fa-tachometer"></i>pro</th>
+        </tr>
+        <tr class="rupee">
+          <td>Rs. 500/-</td>
+          <td>Rs. 1500/-</td>
+          <td>Rs. 2500/-</td>
+          <td>Rs. 3500/-</td>
+        </tr>
+        <tr>
+          <td class ="lightgreen">50 pages</td>
+          <td class ="green">75 pages</td>
+          <td class = "lightblue">unlimited</td>
+          <td class = "blue">unlimited</td>
+        </tr>
+        <tr>
+          <td>3 users</td>
+          <td>5 users</td>
+          <td>10 users</td>
+          <td>unlimited</td>
+        </tr>
+        <tr>
+          <td class ="lightgreen">10 sites</td>
+          <td class ="green">25 sites</td>
+          <td class = "lightblue">100 sites</td>
+          <td class = "blue">unlimited</td>
+        </tr>
+        <tr>
+          <td>50 MB</td>
+          <td>250 MB</td>
+          <td>1 GB</td>
+          <td>5 GB</td>
+        </tr>
+        <tr>
+          <td class ="lightgreen">included</td>
+          <td class ="green">included</td>
+          <td class = "lightblue">included</td>
+          <td class = "blue">included</td>
+        </tr>
+        <tr>
+            <td class="tick">&#10004</td>
+            <td class="tick">&#10004</td>
+            <td class="tick">&#10004</td>
+            <td class="tick">&#10004</td>
+        </tr>
+        <tr>
+            <td class ="lightgreen , cross">&#10006</td>
+            <td class ="green , tick">&#10004</td>
+            <td class = "lightblue , tick">&#10004</td>
+            <td class = "blue , tick">&#10004</td>
+        </tr>
+        <tr>
+            <td class="cross">&#10006</td>
+            <td class="tick">&#10004</td>
+            <td class="tick">&#10004</td>
+            <td class="tick">&#10004</td>
+        </tr>
+        <tr>
+            <td class ="lightgreen , cross">&#10006</td>
+            <td class ="green , cross">&#10006</td>
+            <td class = "lightblue , tick">&#10004</td>
+            <td class = "blue , tick">&#10004</td>
+        </tr>
+        <tr>
+            <td class="cross">&#10006</td>
+            <td class="cross">&#10006</td>
+            <td class="cross">&#10006</td>
+            <td class="tick">&#10004</td>
+        </tr>
+        <tr>
+            <td class ="lightgreen"><button class ="src">Sign up</button></td>
+            <td class ="green"><button class ="src">Sign up</button></td>
+            <td class = "lightblue"><button class ="src">Sign up</button></td>
+            <td class = "blue"><button class ="src">Sign up</button></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

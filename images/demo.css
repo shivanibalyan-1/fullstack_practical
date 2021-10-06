@@ -1,0 +1,18 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.container{
+    width: 800px;
+    height: 800px;
+    background-color: pink;
+}
+.form{
+    color: purple;
+    width: 100px;
+    height: 100px;
+}
+.but{
+    color: red;
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
@@ -42,4 +43,49 @@ tr:hover {
 .edit:hover{
     color: blue;
 
+=======
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    color: white;
+    background-color: rgb(1, 1, 32);
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 20px;
+    border: 3px solid black;
+}
+table,tr,th,td {
+    text-align: center;
+    padding: 15px;
+}
+.name {
+    float: left;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link a {
+    text-decoration: none;
+    color: rgb(53, 49, 49);
+}
+.status {
+    color: green;
+}
+.status:hover{
+    background-color: goldenrod;
+}
+#un {
+    color: red;
+}
+tr:hover {
+    background-color: lightgray;
+}
+.edit:hover{
+    color: blue;
+>>>>>>> c08c490924263ef643bd73645586d2f7e9101b55
 }
